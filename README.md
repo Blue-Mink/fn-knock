@@ -56,6 +56,7 @@
 ```
 assets/    注入素材（应用页 CSS/JS、官方 squircle mask）
 scripts/   build.py 可复现构建脚本
+source/    上游 fn-knock 源码快照（字节级同步自 [kci-lnk/fn-knock-turborepo](https://github.com/kci-lnk/fn-knock-turborepo) tag v2.4.12，版权归作者）
 dist/      本地构建产物（不入库，发布物在 Releases）
 ```
 
