@@ -2,15 +2,15 @@
 
 [敲门knock (fn-knock)](https://www.fnknock.cn/) 的飞牛 fnOS 应用中心（FPK）定制打包。
 
-上游引擎与官方 FPK 由 [kci-lnk/fn-knock-turborepo](https://github.com/kci-lnk/fn-knock-turborepo) 提供（本仓库不修改任何业务逻辑、服务端二进制仅做窗口标题字符串的等长替换）。本项目在上游官方包基础上做了 **fnOS 使用体验定制**，版本号在官方 `2.4.12` 之后追加第四位区分。
+上游引擎与官方 FPK 由 [kci-lnk/fn-knock-turborepo](https://github.com/kci-lnk/fn-knock-turborepo) 提供（本仓库不修改任何业务逻辑、服务端二进制仅做窗口标题字符串的等长替换）。本项目在上游官方包基础上做了 **fnOS 使用体验定制**，版本号与上游保持一致，定制点见下。
 
 ## 当前版本
 
 | | |
 |---|---|
-| 包版本 | **2.4.12.7**（基于官方 2.4.12）|
+| 包版本 | **2.4.12**（与上游版本号保持一致）|
 | FPK 下载 | [Releases](../../releases/latest) |
-| SHA256 | `b6b7ab0c6daedaccee99901830cd0eed70bd90fb3915b361b56c8ca57c641aa2` |
+| SHA256 | `2814ffbfe0fc3fe78929c0b19a90d54fd6b362b33fa29075ad4a260919f4f58f` |
 
 ## 桌面三入口
 
@@ -30,7 +30,7 @@
 
 ## 安装
 
-1. 从 [Releases](../../releases/latest) 下载 `fn-knock-2.4.12.7-fnos-amd64.fpk`
+1. 从 [Releases](../../releases/latest) 下载 `fn-knock-2.4.12-fnos-amd64.fpk`
 2. 飞牛 应用中心 → 手动安装 → 选择 FPK
 3. 向导端口保持默认即可：管理后端 `7998`、认证 `7997`、Go 管理 `7996`、Go 代理/门户 `7999`
 
@@ -46,7 +46,7 @@
    ```bash
    pip install pillow
    python3 scripts/build.py /path/to/official/fn-knock-xxx.fpk
-   # 产出 dist/fn-knock-2.4.12.7-fnos-amd64.fpk
+   # 产出 dist/fn-knock-2.4.12-fnos-amd64.fpk
    ```
 
    脚本会校验上游字符串锚点（i18n / HTML 模板），官方大版本更新导致锚点变化时会直接报错而不是产出坏包。

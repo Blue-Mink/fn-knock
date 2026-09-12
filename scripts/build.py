@@ -3,7 +3,7 @@
 fn-knock fnOS FPK 定制构建脚本
 用法: python3 scripts/build.py <官方fn-knock的FPK路径> [输出目录=dist]
 
-输入官方 fn-knock fnOS 包 (upstream 2.4.12.x)，产出定制版 2.4.12.7：
+输入官方 fn-knock fnOS 包 (upstream 2.4.12.x)，产出定制版 2.4.12：
   1. ui/www/index.html  注入脚本：?apps=1 全屏"应用"图标页(钉标题"敲门应用"、
      官方squircle裁切图标底板、隐藏弹窗标题栏/关闭钮)
   2. ui/config          桌面三入口：敲门knock(控制台) / 敲门应用(全屏图标页) /
@@ -11,7 +11,7 @@ fn-knock fnOS FPK 定制构建脚本
   3. go-reauth-proxy    等长二进制补丁：门户页 <title> 中文"选择访问入口"→"敲门门户"，
      6处 " - Go Reauth Proxy" 标题后缀→空格（窗口标题=敲门门户）
   4. 图标 5 落点         官方 squircle 圆角重制（满幅+mask，mask见 assets/）
-  5. manifest           版本 2.4.12.7；maintainer_url→GitHub 项目；
+  5. manifest           版本 2.4.12；maintainer_url→GitHub 项目；
      distributor_url→https://www.fnknock.cn
 
 依赖: python3 + Pillow
@@ -25,7 +25,7 @@ SRC = pathlib.Path(sys.argv[1])
 root = pathlib.Path(__file__).resolve().parent.parent
 OUT = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else root / 'dist'
 OUT.mkdir(parents=True, exist_ok=True)
-VER = '2.4.12.7'
+VER = '2.4.12'
 
 # ---------- load upstream fpk ----------
 with tarfile.open(SRC) as fk:
