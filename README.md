@@ -1,6 +1,6 @@
-# fn-knock for fnOS（飞牛定制版）
+# 飞牛knock
 
-[敲门knock (fn-knock)](https://www.fnknock.cn/) 的飞牛 fnOS 应用中心（FPK）定制打包。
+敲门knock (fn-knock) 的飞牛 fnOS 应用中心（FPK）定制打包。
 
 上游引擎与官方 FPK 由 [kci-lnk/fn-knock-turborepo](https://github.com/kci-lnk/fn-knock-turborepo) 提供（本仓库不修改任何业务逻辑、服务端二进制仅做窗口标题字符串的等长替换）。本项目在上游官方包基础上做了 **fnOS 使用体验定制**，版本号与上游保持一致，定制点见下。
 
